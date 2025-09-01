@@ -54,7 +54,7 @@ def deletar_usuario(id):
     for usuario in users:
         if usuario["id"] == id:
             users.remove(usuario)
-            return jsonify({"message": "Usuario deletado com sucesso"}), 200
+            return jsonify({"message": "Usuario deletado com sucesso!"}), 200
     return jsonify({"error": "Usuario nao encontrado"}), 404
 
 
